@@ -1,0 +1,173 @@
+/*****************************************************************
+* SETTING
+*****************************************************************/
+
+@import "compass";
+// @import "compass/reset";
+$color-white: #EFEFEF;
+$color-black: #333333;
+$color-red : #B54434;
+
+/*****************************************************************
+* COMMON
+*****************************************************************/
+body {
+	border-top: 5px solid $color-black;
+	background: url("../img/bg_all.jpg");
+	font: 80%/19px Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
+	letter-spacing: 0.1em !important;
+  color: $color-black;
+}
+
+/* Clear Fix */
+.cf:before {
+  content:"";
+  display:block;
+  overflow:hidden;
+}
+.cf:after {
+  @extend .cf:before;
+  clear:both;
+}
+
+
+.txt-shadow {
+  @include text-shadow($color-black 1px 0 1px);
+}
+
+
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+header {
+	text-align: center;
+	margin-bottom: 30px;
+
+	a {
+		text-decoration: none;
+	}
+
+	h1 {
+		font-size: 80px;
+		color: $color-black;
+    font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+	}
+
+	p {
+		text-align: center;
+		font-size: 12px;
+	}
+}
+
+nav {
+	font-size: 20px;
+
+	ul {
+		padding: 0px;
+	}
+
+	li {
+		color: $color-black;
+		text-align: center;
+		list-style: none;
+		line-height: 50px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	li:hover, .current {
+		background: $color-black;
+		color: $color-white;
+
+	}
+}
+
+/*****************************************************************
+* MAIN
+*****************************************************************/
+#top_img {
+	width: 100%;
+}
+
+.h1 {
+  @extend .txt-shadow;
+	font-weight: normal;
+	font-size: 26px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #555;
+}
+
+article {
+	margin: 70px 0;
+	@extend .cf;
+}
+
+.img_box {
+	@include box-sizing(border-box);
+	border: 5px solid #EFEFEF;
+	@include box-shadow(rgba(0,0,0,0.1) 0 1px 0, rgba(0,0,0,0.1) 1px 0 0, rgba(0,0,0,0.1) -1px 0 0, rgba(0,0,0,0.1) 0 -1px 0, rgba(0,0,0,0.1) 0 5px 3px);
+	margin-bottom: 7px;
+}
+
+
+/*****************************************************************
+* ABOUT
+*****************************************************************/
+.img_about {
+	@extend .img_box;
+	width: 30%;
+	float: left;
+	margin-right: 3%;
+}
+
+
+/*****************************************************************
+* MENU
+*****************************************************************/
+.img_menu {
+	@extend .img_box;
+	width: 100%;
+}
+
+.menu_item {
+	float: left;
+	width: 30%;
+	margin-right: 3%;
+}
+
+dt {
+	font-size: 18px;
+	@extend .txt-shadow;
+	margin-bottom: 5px;
+}
+
+dd {
+	margin-left: 0px;
+}
+
+
+
+/*****************************************************************
+* SHOP
+*****************************************************************/
+#shop {
+	tr, th, td {
+		border: 1px solid #CFCFCF;
+		padding: 10px;
+		text-align: left;
+	}
+
+	th {
+		background: #555;
+		color: #EFEFEF;
+		padding: 7px;
+	}
+
+	#map {
+		width: 100%;
+		margin-top: 30px;
+	}
+}

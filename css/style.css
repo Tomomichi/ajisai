@@ -1,0 +1,172 @@
+@charset "UTF-8";
+/*****************************************************************
+* SETTING
+*****************************************************************/
+/*****************************************************************
+* COMMON
+*****************************************************************/
+/* line 14, ../scss/style.scss */
+body {
+  border-top: 5px solid #333333;
+  background: url("../img/bg_all.jpg");
+  font: 80%/19px Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif !important;
+  letter-spacing: 0.1em !important;
+  color: #333333;
+}
+
+/* Clear Fix */
+/* line 23, ../scss/style.scss */
+.cf:before, .cf:after, article:after, article:before {
+  content: "";
+  display: block;
+  overflow: hidden;
+}
+
+/* line 28, ../scss/style.scss */
+.cf:after, article:after {
+  clear: both;
+}
+
+/* line 34, ../scss/style.scss */
+.txt-shadow, .h1, dt {
+  text-shadow: #333333 1px 0 1px;
+}
+
+/*****************************************************************
+* HEADER
+*****************************************************************/
+/* line 43, ../scss/style.scss */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+/* line 47, ../scss/style.scss */
+header a {
+  text-decoration: none;
+}
+/* line 51, ../scss/style.scss */
+header h1 {
+  font-size: 80px;
+  color: #333333;
+  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+}
+/* line 57, ../scss/style.scss */
+header p {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* line 63, ../scss/style.scss */
+nav {
+  font-size: 20px;
+}
+/* line 66, ../scss/style.scss */
+nav ul {
+  padding: 0px;
+}
+/* line 70, ../scss/style.scss */
+nav li {
+  color: #333333;
+  text-align: center;
+  list-style: none;
+  line-height: 50px;
+}
+/* line 77, ../scss/style.scss */
+nav a {
+  text-decoration: none;
+}
+/* line 81, ../scss/style.scss */
+nav li:hover, nav .current {
+  background: #333333;
+  color: #efefef;
+}
+
+/*****************************************************************
+* MAIN
+*****************************************************************/
+/* line 91, ../scss/style.scss */
+#top_img {
+  width: 100%;
+}
+
+/* line 95, ../scss/style.scss */
+.h1 {
+  font-weight: normal;
+  font-size: 26px;
+  padding-bottom: 5px;
+  border-bottom: 1px dotted #555555;
+}
+
+/* line 103, ../scss/style.scss */
+article {
+  margin: 70px 0;
+}
+
+/* line 108, ../scss/style.scss */
+.img_box, .img_about, .img_menu {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 5px solid #efefef;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
+  margin-bottom: 7px;
+}
+
+/*****************************************************************
+* ABOUT
+*****************************************************************/
+/* line 119, ../scss/style.scss */
+.img_about {
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+}
+
+/*****************************************************************
+* MENU
+*****************************************************************/
+/* line 130, ../scss/style.scss */
+.img_menu {
+  width: 100%;
+}
+
+/* line 135, ../scss/style.scss */
+.menu_item {
+  float: left;
+  width: 30%;
+  margin-right: 3%;
+}
+
+/* line 141, ../scss/style.scss */
+dt {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* line 147, ../scss/style.scss */
+dd {
+  margin-left: 0px;
+}
+
+/*****************************************************************
+* SHOP
+*****************************************************************/
+/* line 157, ../scss/style.scss */
+#shop tr, #shop th, #shop td {
+  border: 1px solid #cfcfcf;
+  padding: 10px;
+  text-align: left;
+}
+/* line 163, ../scss/style.scss */
+#shop th {
+  background: #555;
+  color: #EFEFEF;
+  padding: 7px;
+}
+/* line 169, ../scss/style.scss */
+#shop #map {
+  width: 100%;
+  margin-top: 30px;
+}
