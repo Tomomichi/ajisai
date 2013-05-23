@@ -28,7 +28,7 @@ body {
 }
 
 /* line 34, ../scss/style.scss */
-.txt-shadow, .h1, dt {
+.txt-shadow, .h1, #menu h2 {
   text-shadow: #333333 1px 0 1px;
 }
 
@@ -46,47 +46,52 @@ header a {
 }
 /* line 51, ../scss/style.scss */
 header h1 {
-  font-size: 80px;
-  color: #333333;
-  font-family: "ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("../img/logo.png");
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-/* line 57, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 header p {
   text-align: center;
   font-size: 12px;
 }
 
-/* line 63, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 nav {
   font-size: 20px;
 }
-/* line 66, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 nav ul {
   padding: 0px;
 }
-/* line 70, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 nav li {
   color: #333333;
   text-align: center;
   list-style: none;
   line-height: 40px;
 }
-/* line 77, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 nav a {
   text-decoration: none;
 }
-/* line 81, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 nav li:hover, nav .current {
   background: #333333;
   color: #efefef;
 }
 
-/* line 88, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 #link {
   margin-top: 40px;
   text-align: center;
 }
-/* line 92, ../scss/style.scss */
+/* line 98, ../scss/style.scss */
 #link div {
   margin-bottom: 10px;
 }
@@ -94,12 +99,12 @@ nav li:hover, nav .current {
 /*****************************************************************
 * MAIN
 *****************************************************************/
-/* line 100, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 #top_img {
   width: 100%;
 }
 
-/* line 104, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 .h1 {
   font-weight: normal;
   font-size: 26px;
@@ -107,12 +112,12 @@ nav li:hover, nav .current {
   border-bottom: 1px dotted #555555;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 article {
   margin: 70px 0;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 .img_box, .img_about, .img_menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -127,7 +132,7 @@ article {
 /*****************************************************************
 * ABOUT
 *****************************************************************/
-/* line 128, ../scss/style.scss */
+/* line 134, ../scss/style.scss */
 .img_about {
   width: 30%;
   float: left;
@@ -137,46 +142,49 @@ article {
 /*****************************************************************
 * MENU
 *****************************************************************/
-/* line 139, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .img_menu {
   width: 100%;
 }
 
-/* line 144, ../scss/style.scss */
-.menu_item {
-  float: left;
-  width: 30%;
-  margin-right: 3%;
-}
-
-/* line 150, ../scss/style.scss */
-dt {
+/* line 151, ../scss/style.scss */
+#menu h2 {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-/* line 156, ../scss/style.scss */
-dd {
-  margin-left: 0px;
+/* line 158, ../scss/style.scss */
+.menu_item {
+  margin: 15px 0;
+}
+/* line 160, ../scss/style.scss */
+.menu_item div {
+  float: left;
+  width: 68%;
+  padding-top: 10px;
 }
 
 /*****************************************************************
 * SHOP
 *****************************************************************/
-/* line 166, ../scss/style.scss */
+/* line 173, ../scss/style.scss */
 #shop tr, #shop th, #shop td {
   border: 1px solid #cfcfcf;
   padding: 10px;
   text-align: left;
 }
-/* line 172, ../scss/style.scss */
+/* line 179, ../scss/style.scss */
 #shop th {
   background: #555;
   color: #EFEFEF;
   padding: 7px;
 }
-/* line 178, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 #shop #map {
   width: 100%;
+  margin-top: 30px;
+}
+/* line 190, ../scss/style.scss */
+#shop #shop_img {
   margin-top: 30px;
 }
