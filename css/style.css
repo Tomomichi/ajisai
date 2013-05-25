@@ -95,16 +95,20 @@ nav li:hover, nav .current {
 #link div {
   margin-bottom: 10px;
 }
+/* line 102, ../scss/style.scss */
+#link img {
+  width: 100%;
+}
 
 /*****************************************************************
 * MAIN
 *****************************************************************/
-/* line 106, ../scss/style.scss */
+/* line 110, ../scss/style.scss */
 #top_img {
   width: 100%;
 }
 
-/* line 110, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .h1 {
   font-weight: normal;
   font-size: 26px;
@@ -112,12 +116,12 @@ nav li:hover, nav .current {
   border-bottom: 1px dotted #555555;
 }
 
-/* line 118, ../scss/style.scss */
+/* line 122, ../scss/style.scss */
 article {
   margin: 70px 0;
 }
 
-/* line 123, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .img_box, .img_about, .img_menu {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -132,7 +136,7 @@ article {
 /*****************************************************************
 * ABOUT
 *****************************************************************/
-/* line 134, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 .img_about {
   width: 30%;
   float: left;
@@ -142,22 +146,22 @@ article {
 /*****************************************************************
 * MENU
 *****************************************************************/
-/* line 145, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .img_menu {
   width: 100%;
 }
 
-/* line 151, ../scss/style.scss */
+/* line 155, ../scss/style.scss */
 #menu h2 {
   font-size: 18px;
   margin-bottom: 5px;
 }
 
-/* line 158, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .menu_item {
   margin: 15px 0;
 }
-/* line 160, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .menu_item div {
   float: left;
   width: 68%;
@@ -167,24 +171,24 @@ article {
 /*****************************************************************
 * SHOP
 *****************************************************************/
-/* line 173, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 #shop tr, #shop th, #shop td {
   border: 1px solid #cfcfcf;
   padding: 10px;
   text-align: left;
 }
-/* line 179, ../scss/style.scss */
+/* line 183, ../scss/style.scss */
 #shop th {
   background: #555;
   color: #EFEFEF;
   padding: 7px;
 }
-/* line 185, ../scss/style.scss */
+/* line 189, ../scss/style.scss */
 #shop #map {
   width: 100%;
   margin-top: 30px;
 }
-/* line 190, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 #shop #shop_img {
   margin-top: 30px;
 }
