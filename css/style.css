@@ -9,7 +9,7 @@
 body {
   border-top: 5px solid #333333;
   background: url("../img/bg_all.jpg");
-  font: 80%/19px Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", sans-serif !important;
+  font: 80%/19px Helvetica, Arial, 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif !important;
   letter-spacing: 0.1em !important;
   color: #333333;
 }
@@ -113,7 +113,7 @@ nav li:hover, nav .current {
   font-weight: normal;
   font-size: 26px;
   padding-bottom: 5px;
-  border-bottom: 1px dotted #555555;
+  border-bottom: 1px dotted #555;
 }
 
 /* line 122, ../scss/style.scss */
@@ -122,11 +122,11 @@ article {
 }
 
 /* line 127, ../scss/style.scss */
-.img_box, .img_about, .img_menu {
+.img_box, .img_about, .img_menu, .img_special {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  border: 5px solid #efefef;
+  border: 5px solid #EFEFEF;
   -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
   -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
   box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0, rgba(0, 0, 0, 0.1) 1px 0 0, rgba(0, 0, 0, 0.1) -1px 0 0, rgba(0, 0, 0, 0.1) 0 -1px 0, rgba(0, 0, 0, 0.1) 0 5px 3px;
@@ -173,7 +173,7 @@ article {
 *****************************************************************/
 /* line 177, ../scss/style.scss */
 #shop tr, #shop th, #shop td {
-  border: 1px solid #cfcfcf;
+  border: 1px solid #CFCFCF;
   padding: 10px;
   text-align: left;
 }
@@ -191,4 +191,20 @@ article {
 /* line 194, ../scss/style.scss */
 #shop #shop_img {
   margin-top: 30px;
+}
+
+/*****************************************************************
+* SPECIAL
+*****************************************************************/
+/* line 203, ../scss/style.scss */
+#special div {
+  float: left;
+  width: 49%;
+  margin-right: 1%;
+}
+
+/* line 209, ../scss/style.scss */
+.img_special {
+  width: 50%;
+  margin-top: 15px;
 }
